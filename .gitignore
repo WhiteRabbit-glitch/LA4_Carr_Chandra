@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Model files (large — exclude from repo)
+*.keras
+*.h5
+
+# Generated images (can be re-created by running the notebook)
+*.png
+
+# CSV data file (large)
+restaurant_reviews_az.csv
+
+# Claude memory
+.claude/
