@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f5b5e5a6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=691a69d2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7809,12 +7809,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=28f34d91">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=28f34d91">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -7859,6 +7859,133 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'stars'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">())</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Dataset shape: (5000, 10)
+Columns: ['review_id', 'user_id', 'business_id', 'stars', 'useful', 'funny', 'cool', 'text', 'date', 'Sentiment']
+
+Star rating distribution:
+stars
+1     783
+2     369
+3     403
+4     775
+5    2670
+Name: count, dtype: int64
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>review_id</th>
+<th>user_id</th>
+<th>business_id</th>
+<th>stars</th>
+<th>useful</th>
+<th>funny</th>
+<th>cool</th>
+<th>text</th>
+<th>date</th>
+<th>Sentiment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>IVS7do_HBzroiCiymNdxDg</td>
+<td>fdFgZQQYQJeEAshH4lxSfQ</td>
+<td>sGy67CpJctjeCWClWqonjA</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>OK, the hype about having Hatch chili in your ...</td>
+<td>1/27/2020 22:59</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>QP2pSzSqpJTMWOCuUuyXkQ</td>
+<td>JBLWSXBTKFvJYYiM-FnCOQ</td>
+<td>3w7NRntdQ9h0KwDsksIt5Q</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>Pandemic pit stop to have an ice cream.... onl...</td>
+<td>4/19/2020 5:33</td>
+<td>1</td>
+</tr>
+<tr>
+<th>2</th>
+<td>oK0cGYStgDOusZKz9B1qug</td>
+<td>2_9fKnXChUjC5xArfF8BLg</td>
+<td>OMnPtRGmbY8qH_wIILfYKA</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>I was lucky enough to go to the soft opening a...</td>
+<td>2/29/2020 19:43</td>
+<td>1</td>
+</tr>
+<tr>
+<th>3</th>
+<td>E_ABvFCNVLbfOgRg3Pv1KQ</td>
+<td>9MExTQ76GSKhxSWnTS901g</td>
+<td>V9XlikTxq0My4gE8LULsjw</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>I've gone to claim Jumpers all over the US and...</td>
+<td>3/14/2020 21:47</td>
+<td>1</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Rd222CrrnXkXukR2iWj69g</td>
+<td>LPxuausjvDN88uPr-Q4cQA</td>
+<td>CA5BOxKRDPGJgdUQ8OUOpw</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>If you haven't been  to Maynard's kitchen, it'...</td>
+<td>1/17/2020 20:32</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7926,12 +8053,12 @@ Each review is now represented as a 5000-dimensional vector
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dd711542">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dd711542">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -7984,6 +8111,66 @@ Each review is now represented as a 5000-dimensional vector
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Note: Model diagram not available (graphviz not installed)."</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Architecture is shown in the summary table above."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">Model: "ANN_TF-IDF"</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃<span style="font-weight: bold"> Layer (type)                    </span>┃<span style="font-weight: bold"> Output Shape           </span>┃<span style="font-weight: bold">       Param # </span>┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input (<span style="color: #0087ff; text-decoration-color: #0087ff">InputLayer</span>)              │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">5000</span>)           │             <span style="color: #00af00; text-decoration-color: #00af00">0</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-1 (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)          │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1000</span>)           │     <span style="color: #00af00; text-decoration-color: #00af00">5,001,000</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-2 (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)          │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">500</span>)            │       <span style="color: #00af00; text-decoration-color: #00af00">500,500</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ output (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)                  │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1</span>)              │           <span style="color: #00af00; text-decoration-color: #00af00">501</span> │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Total params: </span><span style="color: #00af00; text-decoration-color: #00af00">5,502,001</span> (20.99 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">5,502,001</span> (20.99 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Non-trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">0</span> (0.00 B)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>You must install graphviz (see instructions at https://graphviz.gitlab.io/download/) for `plot_model` to work.
+Note: Model diagram not available (graphviz not installed).
+Architecture is shown in the summary table above.
+</pre>
 </div>
 </div>
 </div>
@@ -8318,12 +8505,12 @@ Label distribution: {np.int64(0): np.int64(1152), np.int64(1): np.int64(3445)}
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=269d8afd">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=269d8afd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -8380,6 +8567,78 @@ Label distribution: {np.int64(0): np.int64(1152), np.int64(1): np.int64(3445)}
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Note: Model diagram not available (graphviz not installed)."</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Architecture is shown in the summary table above."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Training samples: 3447
+Testing samples:  1150
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">Model: "ANN_WordEmbedding"</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃<span style="font-weight: bold"> Layer (type)                    </span>┃<span style="font-weight: bold"> Output Shape           </span>┃<span style="font-weight: bold">       Param # </span>┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input (<span style="color: #0087ff; text-decoration-color: #0087ff">InputLayer</span>)              │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">50</span>)             │             <span style="color: #00af00; text-decoration-color: #00af00">0</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ embedding (<span style="color: #0087ff; text-decoration-color: #0087ff">Embedding</span>)           │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">50</span>, <span style="color: #00af00; text-decoration-color: #00af00">300</span>)        │     <span style="color: #00af00; text-decoration-color: #00af00">3,000,000</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ flatten (<span style="color: #0087ff; text-decoration-color: #0087ff">Flatten</span>)               │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">15000</span>)          │             <span style="color: #00af00; text-decoration-color: #00af00">0</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-1 (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)          │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1000</span>)           │    <span style="color: #00af00; text-decoration-color: #00af00">15,001,000</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-2 (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)          │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">500</span>)            │       <span style="color: #00af00; text-decoration-color: #00af00">500,500</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ output (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)                  │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1</span>)              │           <span style="color: #00af00; text-decoration-color: #00af00">501</span> │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Total params: </span><span style="color: #00af00; text-decoration-color: #00af00">18,502,001</span> (70.58 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">18,502,001</span> (70.58 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Non-trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">0</span> (0.00 B)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>You must install graphviz (see instructions at https://graphviz.gitlab.io/download/) for `plot_model` to work.
+Note: Model diagram not available (graphviz not installed).
+Architecture is shown in the summary table above.
+</pre>
 </div>
 </div>
 </div>
@@ -8507,12 +8766,12 @@ Final Test Accuracy (ANN / Word Embedding): 0.7843
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f3699e81">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f3699e81">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -8561,6 +8820,68 @@ Final Test Accuracy (ANN / Word Embedding): 0.7843
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Note: Model diagram not available (graphviz not installed)."</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Architecture is shown in the summary table above."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">Model: "SimpleRNN_WordEmbedding"</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃<span style="font-weight: bold"> Layer (type)                    </span>┃<span style="font-weight: bold"> Output Shape           </span>┃<span style="font-weight: bold">       Param # </span>┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input (<span style="color: #0087ff; text-decoration-color: #0087ff">InputLayer</span>)              │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">50</span>)             │             <span style="color: #00af00; text-decoration-color: #00af00">0</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ embedding (<span style="color: #0087ff; text-decoration-color: #0087ff">Embedding</span>)           │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">50</span>, <span style="color: #00af00; text-decoration-color: #00af00">300</span>)        │     <span style="color: #00af00; text-decoration-color: #00af00">3,000,000</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-1 (<span style="color: #0087ff; text-decoration-color: #0087ff">SimpleRNN</span>)      │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1000</span>)           │     <span style="color: #00af00; text-decoration-color: #00af00">1,301,000</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-2 (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)          │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">500</span>)            │       <span style="color: #00af00; text-decoration-color: #00af00">500,500</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ output (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)                  │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1</span>)              │           <span style="color: #00af00; text-decoration-color: #00af00">501</span> │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Total params: </span><span style="color: #00af00; text-decoration-color: #00af00">4,802,001</span> (18.32 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">4,802,001</span> (18.32 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Non-trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">0</span> (0.00 B)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>You must install graphviz (see instructions at https://graphviz.gitlab.io/download/) for `plot_model` to work.
+Note: Model diagram not available (graphviz not installed).
+Architecture is shown in the summary table above.
+</pre>
 </div>
 </div>
 </div>
@@ -8682,12 +9003,12 @@ Final Test Accuracy (SimpleRNN / Word Embedding): 0.7600
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e3155cff">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e3155cff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -8735,6 +9056,68 @@ Final Test Accuracy (SimpleRNN / Word Embedding): 0.7600
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Note: Model diagram not available (graphviz not installed)."</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Architecture is shown in the summary table above."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">Model: "LSTM_WordEmbedding"</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃<span style="font-weight: bold"> Layer (type)                    </span>┃<span style="font-weight: bold"> Output Shape           </span>┃<span style="font-weight: bold">       Param # </span>┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input (<span style="color: #0087ff; text-decoration-color: #0087ff">InputLayer</span>)              │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">50</span>)             │             <span style="color: #00af00; text-decoration-color: #00af00">0</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ embedding (<span style="color: #0087ff; text-decoration-color: #0087ff">Embedding</span>)           │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">50</span>, <span style="color: #00af00; text-decoration-color: #00af00">300</span>)        │     <span style="color: #00af00; text-decoration-color: #00af00">3,000,000</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-1 (<span style="color: #0087ff; text-decoration-color: #0087ff">LSTM</span>)           │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1000</span>)           │     <span style="color: #00af00; text-decoration-color: #00af00">5,204,000</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ hidden-layer-2 (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)          │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">500</span>)            │       <span style="color: #00af00; text-decoration-color: #00af00">500,500</span> │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ output (<span style="color: #0087ff; text-decoration-color: #0087ff">Dense</span>)                  │ (<span style="color: #00d7ff; text-decoration-color: #00d7ff">None</span>, <span style="color: #00af00; text-decoration-color: #00af00">1</span>)              │           <span style="color: #00af00; text-decoration-color: #00af00">501</span> │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Total params: </span><span style="color: #00af00; text-decoration-color: #00af00">8,705,001</span> (33.21 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">8,705,001</span> (33.21 MB)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold"> Non-trainable params: </span><span style="color: #00af00; text-decoration-color: #00af00">0</span> (0.00 B)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>You must install graphviz (see instructions at https://graphviz.gitlab.io/download/) for `plot_model` to work.
+Note: Model diagram not available (graphviz not installed).
+Architecture is shown in the summary table above.
+</pre>
 </div>
 </div>
 </div>
@@ -8909,11 +9292,11 @@ This assignment was completed independently with AI assistance as noted above.</
 <tbody>
 <tr>
 <td>ANN + TF-IDF</td>
-<td><strong>80.78%</strong></td>
+<td><strong>83.22%</strong></td>
 </tr>
 <tr>
 <td>ANN + Word Embedding</td>
-<td>78.70%</td>
+<td>78.43%</td>
 </tr>
 <tr>
 <td>SimpleRNN + Word Embedding</td>
@@ -8927,7 +9310,7 @@ This assignment was completed independently with AI assistance as noted above.</
 </table>
 <hr/>
 <p><strong>Word Representation: TF-IDF vs. Word Embedding</strong></p>
-<p>The most striking finding was that TF-IDF outperformed word embeddings by a meaningful margin — 80.78% versus 78.70% for the best embedding model. This was initially surprising given that word embeddings are generally considered a more sophisticated representation. However, on reflection, it makes sense for this particular dataset. Restaurant reviews are a niche domain with highly predictable, sentiment-laden vocabulary. Words like "delicious," "dirty," "rude," and "amazing" appear consistently across reviews and carry strong, direct sentiment signals. TF-IDF captures exactly these high-frequency, discriminative terms and weights them effectively without needing to learn any deeper structure. The domain specificity of the vocabulary actually works in TF-IDF's favor here.</p>
+<p>The most striking finding was that TF-IDF outperformed word embeddings by a meaningful margin — 83.22% versus 78.43% for the best embedding model. This was initially surprising given that word embeddings are generally considered a more sophisticated representation. However, on reflection, it makes sense for this particular dataset. Restaurant reviews are a niche domain with highly predictable, sentiment-laden vocabulary. Words like "delicious," "dirty," "rude," and "amazing" appear consistently across reviews and carry strong, direct sentiment signals. TF-IDF captures exactly these high-frequency, discriminative terms and weights them effectively without needing to learn any deeper structure. The domain specificity of the vocabulary actually works in TF-IDF's favor here.</p>
 <p>Word embeddings, on the other hand, require sufficient training data to learn meaningful dense representations from scratch. With only 5,000 rows — a relatively small corpus for deep learning — the embedding layer cannot fully converge on semantically rich representations. Additionally, TF-IDF is a bag-of-words model that highlights the most informative tokens while suppressing noise, whereas dense embeddings compress all information into fixed-size vectors, which can blur the clearest sentiment signals.</p>
 <hr/>
 <p><strong>Deep Learning Models: ANN vs. SimpleRNN vs. LSTM</strong></p>
@@ -8941,7 +9324,7 @@ This assignment was completed independently with AI assistance as noted above.</
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0351903b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=57a65574">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8985,12 +9368,12 @@ Please compare and comment on the performance differences you would expect betwe
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ad8mk32izci">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ad8mk32izci">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -9015,6 +9398,115 @@ Please compare and comment on the performance differences you would expect betwe
 <span class="nb">print</span><span class="p">(</span><span class="s2">"HTML file : LA4_Carr_Chandra.html  (ready to submit)"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"PDF file  : LA4_Carr_Chandra.pdf   (or use browser print)"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[NbConvertApp] Converting notebook LA4_Carr_Chandra.ipynb to html
+C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbformat\__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[NbConvertApp] WARNING | Alternative text is missing on 4 image(s).
+[NbConvertApp] Writing 623337 bytes to LA4_Carr_Chandra.html
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+==================================================
+EXPORT COMPLETE!
+==================================================
+HTML file : LA4_Carr_Chandra.html  (ready to submit)
+PDF file  : LA4_Carr_Chandra.pdf   (or use browser print)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>[NbConvertApp] Converting notebook LA4_Carr_Chandra.ipynb to pdf
+C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbformat\__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[NbConvertApp] ERROR | Error while converting 'LA4_Carr_Chandra.ipynb'
+Traceback (most recent call last):
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 390, in from_filename
+    return super().from_filename(filename, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 396, in from_file
+    return super().from_file(file_stream, resources, **kw)  # type:ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\exporters\pdf.py", line 184, in from_notebook_node
+    latex, resources = super().from_notebook_node(nb, resources=resources, **kw)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\exporters\latex.py", line 92, in from_notebook_node
+    return super().from_notebook_node(nb, resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\exporters\templateexporter.py", line 429, in from_notebook_node
+    output = self.template.render(nb=nb_copy, resources=resources)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\index.tex.j2", line 8, in top-level template code
+    ((* extends cell_style *))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\style_jupyter.tex.j2", line 176, in top-level template code
+    \prompt{(((prompt)))}{(((prompt_color)))}{(((execution_count)))}{(((extra_space)))}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\base.tex.j2", line 7, in top-level template code
+    ((*- extends 'document_contents.tex.j2' -*))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\document_contents.tex.j2", line 51, in top-level template code
+    ((*- block figure scoped -*))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\display_priority.j2", line 5, in top-level template code
+    ((*- extends 'null.j2' -*))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\null.j2", line 30, in top-level template code
+    ((*- block body -*))
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\base.tex.j2", line 241, in block 'body'
+    ((( super() )))
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\null.j2", line 32, in block 'body'
+    ((*- block any_cell scoped -*))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\null.j2", line 85, in block 'any_cell'
+    ((*- block markdowncell scoped-*)) ((*- endblock markdowncell -*))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\share\jupyter\nbconvert\templates\latex\document_contents.tex.j2", line 68, in block 'markdowncell'
+    ((( cell.source | citation2latex | strip_files_prefix | convert_pandoc('markdown+tex_math_double_backslash', 'json',extra_args=[]) | resolve_references | convert_explicitly_relative_paths | convert_pandoc('json','latex'))))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\filters\pandoc.py", line 36, in convert_pandoc
+    return pandoc(source, from_format, to_format, extra_args=extra_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\utils\pandoc.py", line 50, in pandoc
+    check_pandoc_version()
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\utils\pandoc.py", line 98, in check_pandoc_version
+    v = get_pandoc_version()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chand\anaconda3\envs\tf_env\Lib\site-packages\nbconvert\utils\pandoc.py", line 75, in get_pandoc_version
+    raise PandocMissing()
+nbconvert.utils.pandoc.PandocMissing: Pandoc wasn't found.
+Please check that pandoc is installed:
+https://pandoc.org/installing.html
+</pre>
 </div>
 </div>
 </div>
